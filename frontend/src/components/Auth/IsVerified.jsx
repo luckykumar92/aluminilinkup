@@ -73,7 +73,8 @@ const IsVerified = () => {
         ) : (
           <div>
             <CardHeader className="text-2xl">
-              Thanks for signing up for <span className=" font-bold">AluminiLinkup</span>
+              Thanks for signing up for{" "}
+              <span className=" font-bold">AluminiLinkup</span>
             </CardHeader>
             {userData.isVerified === true ? (
               <div>
@@ -92,7 +93,8 @@ const IsVerified = () => {
                 <div className="mt-4">
                   <Button
                     onClick={handleVerify}
-                    className="px-2 py-2 dark:text-black text-white">
+                    className="px-2 py-2 dark:text-black text-white"
+                  >
                     Click to Verify Email
                   </Button>
                   {/* <p class="mt-4 text-sm">

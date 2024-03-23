@@ -36,13 +36,35 @@ const generateAccessAndRefreshTokens = async (userId) => {
 
 const registerUser = asyncHandler(async (req, res) => {
   // console.log("hi");
-  const { fullName, schoolIdNo, joinYear, passYear, email, password } =
-    req.body;
-  console.log(fullName, schoolIdNo, joinYear, passYear, email, password);
+  const {
+    fullName,
+    schoolIdNo,
+    joinYear,
+    passYear,
+    email,
+    password,
+    profession,
+  } = req.body;
+  console.log(
+    fullName,
+    schoolIdNo,
+    joinYear,
+    passYear,
+    email,
+    password,
+    profession
+  );
+
   if (
-    [fullName, schoolIdNo, joinYear, passYear, email, password].some(
-      (field) => field?.trim() === ""
-    )
+    [
+      fullName,
+      schoolIdNo,
+      joinYear,
+      passYear,
+      email,
+      password,
+      profession,
+    ].some((field) => field?.trim() === "")
   ) {
     throw new ApiError(400, "All fields are required");
   }
@@ -56,17 +78,6 @@ const registerUser = asyncHandler(async (req, res) => {
       "User with this email or schoolIdNo already exists"
     );
   }
-  // -----------------------
-  const avatarLocalPath = req.files?.avatar[0]?.path;
-
-  if (!avatarLocalPath) {
-    throw new ApiError(400, "Avatar file is required");
-  }
-
-  const avatar = await uploadOnCloudinary(avatarLocalPath);
-  if (!avatar) {
-    throw new ApiError(400, "Avatar file is required");
-  }
 
   // -------------------------------
   const user = await User.create({
@@ -76,7 +87,7 @@ const registerUser = asyncHandler(async (req, res) => {
     passYear,
     email,
     password,
-    avatar: avatar.url,
+    profession,
   });
 
   const createdUser = await User.findById(user._id).select(
@@ -160,35 +171,13 @@ const registerUser = asyncHandler(async (req, res) => {
 // ############## Login #################
 
 const loginUser = asyncHandler(async (req, res) => {
-  // req body -> data
-  // username or email
-  //find the user
-  //password check
-  //access and refresh token
-  //send cookie
-
   const { email, password } = req.body;
-  // console.log(email);
 
   if (!email && !password) {
     throw new ApiError(400, "email and password is required");
   }
 
-  // Here is an alternative of above code based on logic discussed in video:
-  // if (!(username || email)) {
-  //     throw new ApiError(400, "username or email is required")
-
-  // }
-  // User.find({ name: 'Punit'}
-  // const user = await User.findOne({
-  //   $or: [{ username }, { email }],
-  // });
-
   const user = await User.findOne({ email: email });
-  // const user = await User.find({
-  //   email: email,
-  // });
-  // console.log(user);
 
   if (!user) {
     throw new ApiError(404, "User does not exist");
@@ -553,6 +542,14 @@ const contactUs = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, {}, "Contact us Form Submitted successfully"));
 });
 
+// -----------------------------------
+const allUser = asyncHandler(async (req, res) => {
+  const user = await User.find({});
+  console.log(user);
+  return res
+    .status(201)
+    .json(new ApiResponse(200, user, "all user are fetched successfully"));
+});
 // ################### Exports Controllers #################
 export {
   registerUser,
@@ -569,4 +566,5 @@ export {
   forgotPassword,
   FPMail,
   contactUs,
+  allUser
 };

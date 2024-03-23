@@ -43,10 +43,15 @@ const SignupForm = () => {
   const [registerEmail, setRegisterEmail] = useState("");
   const [dialogOpen, setDialogOpen] = useState(false);
   const [loading, setLoading] = useState(false);
-
+  const [file, setFile] = useState("");
+  const handlePicture = (e) => {
+    setFile(e.target.files[0]);
+    // setVideo('')
+  };
   // ####################################################
 
   const createAccount = async (data) => {
+    data.file = file;
     setDialogOpen(true);
     setLoading(true);
     console.log(data);
@@ -160,6 +165,17 @@ const SignupForm = () => {
               </select>
             </div>
             {/* ---------------------------------------- */}
+            <div className="grid gap-2">
+              <Label htmlFor="name">Current Profession</Label>
+              <Input
+                id="name"
+                type="text"
+                placeholder="Enter your profession"
+                {...register("profession", {
+                  required: true,
+                })}
+              />
+            </div>
             <div className="grid gap-2">
               <Label htmlFor="email">Email</Label>
               <Input

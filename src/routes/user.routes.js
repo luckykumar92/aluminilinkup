@@ -1,6 +1,7 @@
 import { Router } from "express";
 import {
   FPMail,
+  allUser,
   changeCurrentPassword,
   contactUs,
   forgotPassword,
@@ -52,5 +53,8 @@ router.route("/fpmail").post(FPMail);
 router.route("/forgotpassword").post(forgotPassword);
 
 router.route("/contactus").post(contactUs);
+// ------------------------
+
+router.route("/alumini").get(allUser);
 
 export default router;

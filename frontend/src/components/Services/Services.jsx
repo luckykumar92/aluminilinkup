@@ -9,7 +9,7 @@ const Services = () => {
       name: "Alumini Friends",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
-      slug: "#",
+      slug: "/alumini",
       imageSrc:
         "https://media.istockphoto.com/id/1435083908/photo/she-achieved-what-she-wanted-to-achieve.webp?b=1&s=170667a&w=0&k=20&c=6DUlPFKW8en4Ep1JJdm68CZY1FwCCJ9_yX1Nczgn49Y=",
       imageAlt: "Alumini",
@@ -20,7 +20,7 @@ const Services = () => {
       name: "Events/News",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
-      slug: "events",
+      slug: "/events",
       imageSrc:
         "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZXZlbnR8ZW58MHx8MHx8fDA%3D",
       imageAlt: "Events/News",
@@ -31,7 +31,7 @@ const Services = () => {
       name: "Achievements",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
-      slug: "achievements",
+      slug: "/achievements",
       imageSrc:
         "https://plus.unsplash.com/premium_photo-1661411073939-e7207087fa75?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFjaGlldmVtZW50fGVufDB8fDB8fHww",
       imageAlt: "Achievements",
@@ -43,7 +43,7 @@ const Services = () => {
       name: "Job Board/Career Services",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
-      slug: "career",
+      slug: "/career",
       imageSrc:
         "https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am9ifGVufDB8fDB8fHww",
       imageAlt: "Job Board/Career Services",

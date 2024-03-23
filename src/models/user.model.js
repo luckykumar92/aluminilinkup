@@ -35,6 +35,12 @@ const userSchema = new Schema(
       lowercase: true,
       trim: true,
     },
+    profession: {
+      type: String,
+      required: true,
+      trim: true,
+      index: true,
+    },
     avatar: {
       type: String, // cloudinary url
       // required: true,

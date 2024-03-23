@@ -1,9 +1,10 @@
 import React from "react";
 import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 const ServicesCard = ({ service }) => {
   return (
-    <a key={service.id} href={service.slug} className="group">
+    <Link key={service.id} to={service.slug} className="group">
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
         <img
           src={service.imageSrc}
@@ -22,7 +23,7 @@ const ServicesCard = ({ service }) => {
           {service.buttonText}
         </Button>
       </div>
-    </a>
+    </Link>
   );
 };
 
