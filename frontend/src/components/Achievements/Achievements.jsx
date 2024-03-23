@@ -23,6 +23,7 @@ const Achievements = () => {
         "https://scontent.fluh1-2.fna.fbcdn.net/v/t39.30808-6/312247686_10159818307666590_1431421173809165980_n.jpg?stp=dst-jpg_p526x296&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=U6Li5RTz66AAX8S1Szu&_nc_ht=scontent.fluh1-2.fna&oh=00_AfCre9luu6QPVH7ZZSl8irp7R_udCHCnRqWGDnElUi0IXQ&oe=6603C5E5",
       imageAlt: "Alumini",
     },
+
     {
       id: 3,
       name: "Alumini Friends",
@@ -62,7 +63,7 @@ const Achievements = () => {
             Achievements
           </h1>{" "}
         </div>
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
           {achievements.map((achievement) => (
             <AchievementCard achievement={achievement} />
           ))}

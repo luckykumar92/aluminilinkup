@@ -13,7 +13,7 @@ const EventCard = ({ event }) => {
       <div className="">
         <div className="text-lg font-[600] text-center py-3">{event.name}</div>
         <h1>{event.heading}</h1>
-        <div className="text-center">{event.description}</div>
+        <div className="text-center p-3">{event.description}</div>
       </div>
     </div>
   );

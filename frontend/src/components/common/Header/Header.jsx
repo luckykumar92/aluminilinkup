@@ -149,40 +149,60 @@ const Header = () => {
               </button>
             </SheetTrigger>
             <SheetContent>
-              <SheetHeader>
+              {/* <SheetHeader>
                 <SheetTitle>Edit profile</SheetTitle>
                 <SheetDescription>
                   Make changes to your profile here. Click save when you're
                   done.
                 </SheetDescription>
-              </SheetHeader>
+              </SheetHeader> */}
               <div className="grid gap-4 py-4">
-                <div className="grid grid-cols-4 items-center gap-4">
-                  <Label htmlFor="name" className="text-right">
-                    Name
-                  </Label>
-                  <Input
-                    id="name"
-                    value="Pedro Duarte"
-                    className="col-span-3"
-                  />
+                <div>
+                  <Link to="/">
+                    <button className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                      <span className="text-center flex items-center">
+                        Home
+                      </span>
+                    </button>
+                  </Link>
                 </div>
-                <div className="grid grid-cols-4 items-center gap-4">
-                  <Label htmlFor="username" className="text-right">
-                    Username
-                  </Label>
-                  <Input
-                    id="username"
-                    value="@peduarte"
-                    className="col-span-3"
-                  />
+                <div>
+                  <Link to="/events">
+                    <button className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                      <span className="text-center flex items-center">
+                        Events
+                      </span>
+                    </button>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/achievements">
+                    <button className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                      <span className="text-center flex items-center">
+                        Achievements
+                      </span>
+                    </button>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/contact-us">
+                    <button className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                      <span className="text-center flex items-center">
+                        Contact
+                      </span>
+                    </button>
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/blog">
+                    <button className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
+                      <span className="text-center flex items-center">
+                        Blog
+                      </span>
+                    </button>
+                  </Link>
                 </div>
               </div>
-              <SheetFooter>
-                <SheetClose asChild>
-                  <Button type="submit">Save changes</Button>
-                </SheetClose>
-              </SheetFooter>
             </SheetContent>
           </Sheet>
         </div>
