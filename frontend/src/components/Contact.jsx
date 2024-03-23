@@ -30,9 +30,9 @@ const Contact = () => {
   };
   return (
     <div>
-      <section className="bg-[#003566] text-white">
+      <section className="bg-[#003566]">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
             Contact Us
           </h2>
           <p className="mb-8  font-light text-center text-gray-400 sm:text-xl">
@@ -40,19 +40,21 @@ const Contact = () => {
             know.
           </p>
           <div className=" flex flex-col  items-start content-center ml-[30%] max-[480px]:ml-[0%] lg:mb-16">
-            <div className=" flex flex-row">
+            <div className=" flex flex-row text-white">
               <Phone className="mr-3" />
               <p>+91 9876543210</p>
             </div>
             {/*  */}
-            <div className=" flex flex-row mt-2">
+            <div className=" flex flex-row mt-2 text-white">
               <Mail className="mr-3" />
               <p>aluminilinkup@gmail.com</p>
             </div>
           </div>
           <form onSubmit={handleSubmit(contactUs)} className="space-y-8">
             <div>
-              <Label htmlFor="email">Your email</Label>
+              <Label htmlFor="email" className=" text-blue-50">
+                Your email
+              </Label>
               <Input
                 placeholder="Enter your email"
                 type="email"
@@ -67,7 +69,9 @@ const Contact = () => {
                   },
                 })}
               />
-              <Label htmlFor="subject">Subject</Label>
+              <Label htmlFor="subject" className=" text-blue-50">
+                Subject
+              </Label>
               <Input
                 placeholder="Let us know how we can help you"
                 type="text"
@@ -76,7 +80,9 @@ const Contact = () => {
                   required: false,
                 })}
               />
-              <Label htmlFor="message">Your message</Label>
+              <Label htmlFor="message" className=" text-blue-50">
+                Your message
+              </Label>
               <Textarea
                 placeholder="Leave a comment..."
                 className="mb-5"
