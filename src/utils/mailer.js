@@ -25,7 +25,7 @@ const mailSender = async ([...email], subject, content) => {
 
   try {
     let mailOptions = {
-      from: `AluminiLinkup${EMAIL}`,
+      from: `AluminiLinkup ${EMAIL}`,
       to: [...email],
       subject: subject,
       html: content,

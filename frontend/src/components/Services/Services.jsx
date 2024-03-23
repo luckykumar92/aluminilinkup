@@ -11,7 +11,7 @@ const Services = () => {
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
       slug: "#",
       imageSrc:
-        "https://images.unsplash.com/photo-1504600770771-fb03a6961d33?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3F1YXJlfGVufDB8fDB8fHww",
+        "https://media.istockphoto.com/id/1435083908/photo/she-achieved-what-she-wanted-to-achieve.webp?b=1&s=170667a&w=0&k=20&c=6DUlPFKW8en4Ep1JJdm68CZY1FwCCJ9_yX1Nczgn49Y=",
       imageAlt: "Alumini",
       buttonText: "View Alumini",
     },
@@ -20,9 +20,9 @@ const Services = () => {
       name: "Events/News",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
-      slug: "#",
+      slug: "events",
       imageSrc:
-        "https://images.unsplash.com/photo-1504600770771-fb03a6961d33?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3F1YXJlfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZXZlbnR8ZW58MHx8MHx8fDA%3D",
       imageAlt: "Events/News",
       buttonText: "View News/Events",
     },
@@ -31,31 +31,21 @@ const Services = () => {
       name: "Achievements",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
-      slug: "#",
+      slug: "achievements",
       imageSrc:
-        "https://images.unsplash.com/photo-1504600770771-fb03a6961d33?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3F1YXJlfGVufDB8fDB8fHww",
+        "https://plus.unsplash.com/premium_photo-1661411073939-e7207087fa75?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFjaGlldmVtZW50fGVufDB8fDB8fHww",
       imageAlt: "Achievements",
       buttonText: "View Achievements",
     },
-    {
-      id: 3,
-      name: "Volunteer opportunities",
-      description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
-      slug: "#",
-      imageSrc:
-        "https://images.unsplash.com/photo-1504600770771-fb03a6961d33?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3F1YXJlfGVufDB8fDB8fHww",
-      imageAlt: "Volunteer opportunities",
-      buttonText: "View Volunteer opportunities",
-    },
+
     {
       id: 4,
       name: "Job Board/Career Services",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
-      slug: "#",
+      slug: "career",
       imageSrc:
-        "https://images.unsplash.com/photo-1504600770771-fb03a6961d33?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3F1YXJlfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am9ifGVufDB8fDB8fHww",
       imageAlt: "Job Board/Career Services",
       buttonText: "View Job Board/Career Services",
     },

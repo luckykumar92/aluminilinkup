@@ -16,6 +16,8 @@ import Test from "./pages/Test.jsx";
 import { HomePage } from "./pages/HomePage.jsx";
 import Services from "./components/Services/Services.jsx";
 import About from "./components/About/About.jsx";
+import CareerServices from "./components/CareerServices/CareerServices.jsx";
+import Achievements from "./components/Achievements/Achievements.jsx";
 
 // ################ Router ###################
 
@@ -44,6 +46,14 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/career",
+        element: <CareerServices />,
+      },
+      {
+        path: "/achievements",
+        element: <Achievements />,
       },
       {
         path: "/login",

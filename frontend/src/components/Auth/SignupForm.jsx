@@ -127,12 +127,12 @@ const SignupForm = () => {
               />
             </div>{" "}
             <div className="grid gap-2">
-              <Label htmlFor="idNo">School ID No</Label>
+              <Label htmlFor="schoolIdNo">School ID No</Label>
               <Input
-                id="idNo"
+                id="schoolIdNo"
                 type="text"
                 placeholder="Enter your School ID No"
-                {...register("idNo", {
+                {...register("schoolIdNo", {
                   required: true,
                 })}
               />
@@ -143,7 +143,8 @@ const SignupForm = () => {
               <select
                 id="joinYear"
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                {...register("joinYear", { required: true })}>
+                {...register("joinYear", { required: true })}
+              >
                 {yearOptions}
               </select>
             </div>
@@ -153,7 +154,8 @@ const SignupForm = () => {
               <select
                 id="passYear"
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                {...register("passYear", { required: true })}>
+                {...register("passYear", { required: true })}
+              >
                 {yearOptions}
               </select>
             </div>
@@ -205,7 +207,8 @@ const SignupForm = () => {
               <div className="grid gap-1.5 leading-none">
                 <label
                   htmlFor="terms1"
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
                   Accept terms and conditions
                 </label>
                 <p className="text-sm text-muted-foreground">
@@ -217,7 +220,8 @@ const SignupForm = () => {
           <CardFooter>
             <Button
               type="submit"
-              className="w-[90%] mx-auto bg-[#003566] hover:bg-[#003566] hover:bg-opacity-80">
+              className="w-[90%] mx-auto bg-[#003566] hover:bg-[#003566] hover:bg-opacity-80"
+            >
               Create account
             </Button>
           </CardFooter>
@@ -255,12 +259,12 @@ const SignupForm = () => {
                     If You have Verified below
                   </AlertDialogTitle>
                   <div className="relative flex justify-center flex-row mx-auto space-x-12">
-                    {/* <Link to="/">
-                    <Button variant="">Home</Button>
-                  </Link>
-                  <Link to="/login">
-                    <Button variant="">Login</Button>
-                  </Link> */}
+                    <Link to="/">
+                      <Button variant="">Home</Button>
+                    </Link>
+                    <Link to="/login">
+                      <Button variant="">Login</Button>
+                    </Link>
                   </div>
                 </AlertDialogDescription>
               </AlertDialogDescription>

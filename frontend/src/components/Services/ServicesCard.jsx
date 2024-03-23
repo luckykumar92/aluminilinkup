@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const ServicesCard = ({ service }) => {
   return (
-    <a key={service.id} href={service.href} className="group">
+    <a key={service.id} href={service.slug} className="group">
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
         <img
           src={service.imageSrc}

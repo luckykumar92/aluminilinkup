@@ -38,7 +38,7 @@ const registerUser = asyncHandler(async (req, res) => {
   // console.log("hi");
   const { fullName, schoolIdNo, joinYear, passYear, email, password } =
     req.body;
-
+  console.log(fullName, schoolIdNo, joinYear, passYear, email, password);
   if (
     [fullName, schoolIdNo, joinYear, passYear, email, password].some(
       (field) => field?.trim() === ""
@@ -58,12 +58,25 @@ const registerUser = asyncHandler(async (req, res) => {
   }
   // -----------------------
   const avatarLocalPath = req.files?.avatar[0]?.path;
-  const schoolIdLocalPath = req.files?.schoolId[0]?.path;
+
+  if (!avatarLocalPath) {
+    throw new ApiError(400, "Avatar file is required");
+  }
+
+  const avatar = await uploadOnCloudinary(avatarLocalPath);
+  if (!avatar) {
+    throw new ApiError(400, "Avatar file is required");
+  }
+
   // -------------------------------
   const user = await User.create({
     fullName,
+    schoolIdNo,
+    joinYear,
+    passYear,
     email,
     password,
+    avatar: avatar.url,
   });
 
   const createdUser = await User.findById(user._id).select(
@@ -532,7 +545,7 @@ const contactUs = asyncHandler(async (req, res) => {
   </body>
 </html>`;
 
-  const email = "neartocollege@gmail.com";
+  const email = "aluminilinkup@gmail.com";
   await mailSender([email], "Contact Us / Feedback", mailContent);
 
   return res

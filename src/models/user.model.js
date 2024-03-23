@@ -37,11 +37,11 @@ const userSchema = new Schema(
     },
     avatar: {
       type: String, // cloudinary url
-      required: true,
+      // required: true,
     },
     proofId: {
       type: String, // cloudinary url
-      required: true,
+      // required: true,
     },
     password: {
       type: String,
