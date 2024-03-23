@@ -20,6 +20,8 @@ import CareerServices from "./components/CareerServices/CareerServices.jsx";
 import Achievements from "./components/Achievements/Achievements.jsx";
 import Alumini from "./components/Alumini/Alumini.jsx";
 import Contact from "./components/Contact.jsx";
+import Blog from "./components/Blog/Blog.jsx";
+import Events from "./components/Events/Events.jsx";
 
 // ################ Router ###################
 
@@ -60,6 +62,14 @@ const router = createBrowserRouter([
       {
         path: "/alumini",
         element: <Alumini />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
       },
       {
         path: "/login",

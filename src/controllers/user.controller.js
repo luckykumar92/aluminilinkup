@@ -566,5 +566,5 @@ export {
   forgotPassword,
   FPMail,
   contactUs,
-  allUser
+  allUser,
 };

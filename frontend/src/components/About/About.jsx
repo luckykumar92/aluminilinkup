@@ -9,7 +9,7 @@ const About = () => {
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
             About Us
           </h1>
-          <p className="font-normal text-base leading-6 text-gray-600 ">
+          <p className="font-normal leading-6 text-gray-600 text-md ">
             aluminilinkup is brought to you by a passionate team of alumni
             volunteers dedicated to enriching the lives of our fellow graduates.
             We believe in the transformative power of staying connected and
@@ -29,7 +29,7 @@ const About = () => {
           <h1 className="text-3xl lg:text-4xl font-bold leading-9 text-gray-800 pb-4">
             Our Story
           </h1>
-          <p className="font-normal text-base leading-6 text-gray-600 ">
+          <p className="font-normal text-md leading-6 text-gray-600 ">
             "At aluminilinkup, we understand that graduating is merely the
             beginning of your journey. Our goal is to facilitate your continued
             growth, both personally and professionally. Our platform offers a
@@ -54,7 +54,7 @@ const About = () => {
                 alt="Alexa featured Img"
               />
               <p className="font-medium text-xl leading-5 text-gray-800 mt-4">
-                Lucky Kumar
+                Lily
               </p>
             </div>
             <div className="p-4 pb-6 flex justify-center flex-col items-center">
@@ -69,7 +69,7 @@ const About = () => {
                 alt="Olivia featured Img"
               />
               <p className="font-medium text-xl leading-5 text-gray-800 mt-4">
-                Praveen Kumar
+                Olivia
               </p>
             </div>
             <div className="p-4 pb-6 flex justify-center flex-col items-center">
