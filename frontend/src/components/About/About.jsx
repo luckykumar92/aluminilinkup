@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import img1 from "@/assets/image/bigimg1.jpg";
 
 const About = () => {
   return (
@@ -18,12 +19,8 @@ const About = () => {
             join us in shaping the future of our alumni network.
           </p>
         </div>
-        <div className="w-full lg:w-8/12 ">
-          <img
-            className="w-full h-full"
-            src="https://i.ibb.co/FhgPJt8/Rectangle-116.png"
-            alt="A group of People"
-          />
+        <div className="w-full lg:w-6/12 ">
+          <img className="w-full h-full" src={img1} alt="A group of People" />
         </div>
       </div>
 
@@ -57,7 +54,7 @@ const About = () => {
                 alt="Alexa featured Img"
               />
               <p className="font-medium text-xl leading-5 text-gray-800 mt-4">
-                Alexa
+                Lucky Kumar
               </p>
             </div>
             <div className="p-4 pb-6 flex justify-center flex-col items-center">
@@ -72,7 +69,7 @@ const About = () => {
                 alt="Olivia featured Img"
               />
               <p className="font-medium text-xl leading-5 text-gray-800 mt-4">
-                Olivia
+                Praveen Kumar
               </p>
             </div>
             <div className="p-4 pb-6 flex justify-center flex-col items-center">
@@ -87,7 +84,7 @@ const About = () => {
                 alt="Liam featued Img"
               />
               <p className="font-medium text-xl leading-5 text-gray-800 mt-4">
-                Liam
+                Pritesh Kumar
               </p>
             </div>
             <div className="p-4 pb-6 flex justify-center flex-col items-center">
@@ -102,7 +99,7 @@ const About = () => {
                 alt="Elijah featured img"
               />
               <p className="font-medium text-xl leading-5 text-gray-800 mt-4">
-                Elijah
+                Ankur Kumar
               </p>
             </div>
           </div>
@@ -110,6 +107,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;

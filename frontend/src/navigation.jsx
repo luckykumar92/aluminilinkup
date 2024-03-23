@@ -19,6 +19,7 @@ import About from "./components/About/About.jsx";
 import CareerServices from "./components/CareerServices/CareerServices.jsx";
 import Achievements from "./components/Achievements/Achievements.jsx";
 import Alumini from "./components/Alumini/Alumini.jsx";
+import Contact from "./components/Contact.jsx";
 
 // ################ Router ###################
 
@@ -31,10 +32,10 @@ const router = createBrowserRouter([
         path: "",
         element: <HomePage />,
       },
-      // {
-      //   path: "contact-us",
-      //   element: <Contact />,
-      // },
+      {
+        path: "contact-us",
+        element: <Contact />,
+      },
       {
         path: "about-us",
         element: <About />,

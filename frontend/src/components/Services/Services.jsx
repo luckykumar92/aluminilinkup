@@ -8,7 +8,7 @@ const Services = () => {
       id: 1,
       name: "Alumini Friends",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
+        "Rediscover classmates, build your professional network, and find mentors within our vast alumni database",
       slug: "/alumini",
       imageSrc:
         "https://media.istockphoto.com/id/1435083908/photo/she-achieved-what-she-wanted-to-achieve.webp?b=1&s=170667a&w=0&k=20&c=6DUlPFKW8en4Ep1JJdm68CZY1FwCCJ9_yX1Nczgn49Y=",
@@ -16,10 +16,10 @@ const Services = () => {
       buttonText: "View Alumini",
     },
     {
-      id: 1,
+      id: 2,
       name: "Events/News",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
+        "Discover upcoming reunions, career workshops, industry news, and inspiring alumni success stories",
       slug: "/events",
       imageSrc:
         "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZXZlbnR8ZW58MHx8MHx8fDA%3D",
@@ -27,10 +27,10 @@ const Services = () => {
       buttonText: "View News/Events",
     },
     {
-      id: 2,
+      id: 3,
       name: "Achievements",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
+        "Showcase your accomplishments, honor your peers, achievements within our alumni network.",
       slug: "/achievements",
       imageSrc:
         "https://plus.unsplash.com/premium_photo-1661411073939-e7207087fa75?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFjaGlldmVtZW50fGVufDB8fDB8fHww",
@@ -42,7 +42,7 @@ const Services = () => {
       id: 4,
       name: "Job Board/Career Services",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus deleniti",
+        "Find exclusive job postings from alumni-owned businesses,and  advance your professional journey",
       slug: "/career",
       imageSrc:
         "https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am9ifGVufDB8fDB8fHww",
@@ -63,5 +63,4 @@ const Services = () => {
     </div>
   );
 };
-
 export default Services;
