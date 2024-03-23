@@ -1,5 +1,7 @@
 import { Mails } from "lucide-react";
 import React from "react";
+import bgImg from "@/assets/lpulogo.png";
+import menImg from "@/assets/men.jpg";
 
 const AluminiCard = ({ alumini }) => {
   return (
@@ -7,14 +9,14 @@ const AluminiCard = ({ alumini }) => {
       <div className="rounded-t-lg h-32 overflow-hidden">
         <img
           className="object-cover object-top w-full"
-          src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          src={bgImg}
           alt="Mountain"
         />
       </div>
       <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden">
         <img
           className="object-cover object-center h-32"
-          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+          src={menImg}
           alt="Woman looking front"
         />
       </div>
