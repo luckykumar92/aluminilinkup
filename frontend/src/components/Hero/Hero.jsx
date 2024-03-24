@@ -1,6 +1,9 @@
 import React from "react";
 import { ArrowUp, Laugh, Smartphone, UsersRound } from "lucide-react";
 import bgImage from "@/assets/image/main_photo.jpg";
+import connectImg from "@/assets/icons/connect.svg";
+import growImg from "@/assets/icons/grow.svg";
+import succeedImg from "@/assets/icons/success.svg";
 
 const Hero = () => {
   return (
@@ -38,34 +41,34 @@ const Hero = () => {
             data-aos-delay="250"
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94]">
-                <span className="flex text-[#17AD94] place-content-center mb-3">
-                  <Laugh className="w-9 h-9" />
+              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#003566]">
+                <span className="flex text-[#white] place-content-center mb-3">
+                  <img src={connectImg} className=" w-12 " alt="" />
                 </span>
                 <h3 className="font-bold p-0 text-xl">
-                  <span className="text-white transition ease-in-out duration-300 hover:text-[#17AD94]">
+                  <span className="text-white transition ease-in-out duration-300 hover:text-[#003566]">
                     <div>Connect</div>
                   </span>
                 </h3>
               </div>
 
-              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94]">
-                <span className="flex text-[#17AD94] place-content-center mb-3">
-                  <Smartphone className="w-9 h-9" />
+              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#003566]">
+                <span className="flex text-[#003566] place-content-center mb-3">
+                  <img src={growImg} className=" w-12 " alt="" />
                 </span>
                 <h3 className="font-bold p-0 text-xl">
-                  <span className="text-white transition ease-in-out duration-300 hover:text-[#17AD94] hover:border-[#17AD94]">
+                  <span className="text-white transition ease-in-out duration-300 hover:text-[#003566] hover:border-[#003566]">
                     <div>Grow</div>
                   </span>
                 </h3>
               </div>
 
-              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94] ">
-                <span className="flex text-[#17AD94] place-content-center mb-3">
-                  <UsersRound className="w-9 h-9" />
+              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#003566] ">
+                <span className="flex text-[#003566] place-content-center mb-3">
+                  <img src={succeedImg} className=" w-12 " alt="" />
                 </span>
                 <h3 className="font-bold p-0 text-xl">
-                  <span className="text-white transition ease-in-out duration-300 hover:text-[#17AD94] hover:border-[#17AD94]">
+                  <span className="text-white transition ease-in-out duration-300 hover:text-[#003566] hover:border-[#003566]">
                     <div>Succeed</div>
                   </span>
                 </h3>
