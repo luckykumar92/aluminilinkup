@@ -65,15 +65,9 @@ const Header = () => {
       active: true,
     },
     {
-      name: "Orders",
-      icon: <CreditCard className="mr-2 h-4 w-4" />,
-      slug: "/my-order",
-      active: true,
-    },
-    {
       name: "Settings",
       icon: <Settings className="mr-2 h-4 w-4" />,
-      slug: "/setting",
+      slug: "/",
       active: true,
     },
   ];
