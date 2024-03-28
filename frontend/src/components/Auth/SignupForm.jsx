@@ -81,19 +81,36 @@ const SignupForm = () => {
   // ----------------------------------------
   const currentYear = new Date().getFullYear();
   const yearRange = 100;
-  const [yearOptions, setYearOptions] = useState([]);
+  const [startYearOptions, setStartYearOptions] = useState([]);
+  const [endYearOptions, setEndYearOptions] = useState([]);
+  const [selectedStartYear, setSelectedStartYear] = useState(currentYear); // New State
 
   useEffect(() => {
-    const options = [];
+    // Generate start year options (unchanged)
+    const startOptions = [];
     for (let i = currentYear; i >= currentYear - yearRange; i--) {
-      options.push(
+      startOptions.push(
         <option key={i} value={i}>
           {i}
         </option>
       );
     }
-    setYearOptions(options);
+    setStartYearOptions(startOptions);
   }, []);
+
+  useEffect(() => {
+    // Generate end year options based on selectedStartYear
+    const endOptions = [];
+    for (let i = selectedStartYear; i <= currentYear+5; i++) {
+      endOptions.push(
+        <option key={i} value={i}>
+          {i}
+        </option>
+      );
+    }
+    setEndYearOptions(endOptions);
+  }, [selectedStartYear, currentYear]); // Dependency array
+
   return (
     <div className="w-full py-8 max-[640px]:py-0">
       <Card className="flex-1 md:max-w-2xl mx-auto max-[640px]:my-0 max-[640px]:rounded-none">
@@ -148,9 +165,13 @@ const SignupForm = () => {
               <select
                 id="joinYear"
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                {...register("joinYear", { required: true })}
+                {...register("joinYear", {
+                  required: true,
+                  onChange: (event) =>
+                    setSelectedStartYear(parseInt(event.target.value)),
+                })}
               >
-                {yearOptions}
+                {startYearOptions}
               </select>
             </div>
             {/* ------------------------------------------ */}
@@ -161,7 +182,7 @@ const SignupForm = () => {
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 {...register("passYear", { required: true })}
               >
-                {yearOptions}
+                {endYearOptions}
               </select>
             </div>
             {/* ---------------------------------------- */}

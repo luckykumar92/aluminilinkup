@@ -57,7 +57,7 @@ const NavBar = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link to="/" legacyBehavior passHref>
+          <Link to="/" legacybehavior="true" passhref="true">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
@@ -65,28 +65,28 @@ const NavBar = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link to="/events" legacyBehavior passHref>
+          <Link to="/events" legacybehavior="true" passhref="true">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Events
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="/achievements" legacyBehavior passHref>
+          <Link to="/achievements" llegacybehavior="true" passhref="true">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Achievements
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="/contact-us" legacyBehavior passHref>
+          <Link to="/contact-us" legacybehavior="true" passhref="true">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="/blog" legacyBehavior passHref>
+          <Link to="/blog" legacybehavior="true" passhref="true">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Blog
             </NavigationMenuLink>
