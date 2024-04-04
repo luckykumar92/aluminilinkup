@@ -544,8 +544,10 @@ const contactUs = asyncHandler(async (req, res) => {
 
 // -----------------------------------
 const allUser = asyncHandler(async (req, res) => {
-  const user = await User.find({});
-  console.log(user);
+  const user = await User.find({ isVerified: true })
+    .select("-password -refreshToken")
+    .sort({ passYear: -1 });
+  // console.log(user);
   return res
     .status(201)
     .json(new ApiResponse(200, user, "all user are fetched successfully"));
